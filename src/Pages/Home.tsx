@@ -45,7 +45,7 @@ function Home() {
           <div className="home__city-country">It's country is: {data.getCityByName.country} </div>
           <div className="home__city-temperature">The actual temperature is: <b>{parseInt(data.getCityByName.weather.temperature.actual) / 10}</b></div>
           <div className="home__city-feelslike">While it feels like it's: <b>{parseInt(data.getCityByName.weather.temperature.feelsLike) / 10}</b></div>
-          <div className="home__city-weather-description">Well, there is (are): <b>{data.getCityByName.weather.summary.description}</b>{data.getCityByName.weather.summary}</div>
+          <div className="home__city-weather-description">Well, there is (are): <b>{data.getCityByName.weather.summary.description}</b></div>
         </div>
         : <div className="home__city-weather-info">There's nothing...</div>
       }
