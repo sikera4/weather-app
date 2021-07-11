@@ -42,7 +42,7 @@ function Home() {
       { (data.getCityByName && data.getCityByName.name) ?
         <div className="home__city-weather-info">
           <div className="home__city-name">You've searched for: <b>{data.getCityByName.name}</b></div>
-          <div className="home__city-country">It's country is: {data.getCityByName.country} </div>
+          <div className="home__city-country">It's country is: <b>{data.getCityByName.country}</b></div>
           <div className="home__city-temperature">The actual temperature is: <b>{parseInt(data.getCityByName.weather.temperature.actual) / 10}</b></div>
           <div className="home__city-feelslike">While it feels like it's: <b>{parseInt(data.getCityByName.weather.temperature.feelsLike) / 10}</b></div>
           <div className="home__city-weather-description">Well, there is (are): <b>{data.getCityByName.weather.summary.description}</b></div>
